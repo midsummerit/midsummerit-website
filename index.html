@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Midsummer IT</title>
+    <meta name="description" content="Midsummer IT">
+	<meta name="keywords" content="Midsummer IT digital consultant agency startups online business UI design API">
+    <meta name="author" content="Midsummer IT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style/msit-style.css?ver=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+</head>
+
+<body>
+
+
+<div class="home-page-container banner-yellow">
+
+    <div class="home-page-top-banner" >
+
+        <div class="home-page-top-banner-leftside banner-gold">
+            <h1 class="left-top-banner-animation-sideways home-page-top-banner-leftside-text text-blue">Midsummer</h1>
+        </div>
+
+        <div class="home-page-top-banner-rightside banner-blue">
+            <h1 class="right-top-banner-animation-sideways home-page-top-banner-rightside-text text-antiquewhite">IT</h1>
+        </div>
+
+    </div>
+
+    <div class="home-page-content-container">
+
+        <div class="main-body-banner banner-yellow">
+
+            <div class="main-body-top-row">
+                <div class="main-body-left-column-text fade-in" >                                            
+                    <h2 class="main-body-hero-text text-blue">Create. Inspire. Engage.</h2>
+                </div>
+            </div>
+
+            <div class="main-body-middle-row">
+
+                <button id="portfolio" class="main-body-button text-blue" onclick="showPopup(this.id)">
+                    Portfolio
+                </button>  
+
+                <button id="aboutus" class="main-body-button text-blue" onclick="showPopup(this.id)">
+                    About us
+                </button>  
+
+                <button id="contactus" class="main-body-button text-blue" onclick="showPopup(this.id)">
+                    Contact us
+                </button>  
+
+            </div>
+
+            <div class="main-body-bottom-row">                
+
+                <div class="main-body-right-column-text fade-in" >
+                    <h2 class="main-body-hero-text text-blue">Design. Build. Enable.</h2>        
+                </div>
+
+            </div>
+
+        </div>    
+
+        <div class="popup-overlay popup-overlay-shadow" id="portfolio-popup" onclick="hidePopup(this.id)" > 
+            <div class="popup-overlay-banner" >
+
+                <div class="popup-overlay-banner-leftside">
+                    <span class="popup-overlay-banner-leftside-text text-blue">Port</span>
+                </div>
+        
+                <div class="popup-overlay-banner-rightside banner-blue" >
+                    <span class="popup-overlay-banner-rightside-text text-antiquewhite">folio</span>
+                </div>
+        
+            </div>        
+
+            <p class="popup-text">
+                Below are a few recent web site designs by Midsummer IT.                 
+            </p>
+
+            <p class="popup-text">
+                <a href="http://secretgarden.midsummerit.com/" rel="nofollow">Secret Garden</a>                 
+            </p>
+
+            <p class="popup-text popup-text-smaller">
+                A full working web site with scroll navigation and parallax background images, build for an online business selling vegan soy wax candles. 
+                The design language has a monochomatic feel reflecting the clean, crisp yet fresh style of the brand; which was a princple requirement from client.
+            </p>            
+
+            <p class="popup-text">
+                <a href="http://skilledbase.midsummerit.com/" rel="nofollow">Skilledbase</a>                 
+            </p>
+
+            <p class="popup-text popup-text-smaller">
+                A design idea for a landing page and related forms for an online model and photograph casting agency for the self employed visual content creator. 
+                The two main page links lead to appropriate forms, designed to have a user experience already familiar to the creator.
+            </p>            
+
+
+        </div>
+
+        <div class="popup-overlay popup-overlay-shadow" id="aboutus-popup" onclick="hidePopup(this.id)" > 
+            <div class="popup-overlay-banner" >
+
+                <div class="popup-overlay-banner-leftside">
+                    <span class="popup-overlay-banner-leftside-text text-blue">About</span>
+                </div>
+        
+                <div class="popup-overlay-banner-rightside banner-blue" >
+                    <span class="popup-overlay-banner-rightside-text text-antiquewhite">Us</span>
+                </div>
+        
+            </div>   
+            
+            <p class="popup-text">
+                Midsummer IT are a consultancy, primarily focused on early stage digital start ups and online businesses, helping to build their web presence.                 
+            </p>
+            <p class="popup-text popup-text-smaller">
+                Able to advice and analyse your business model and how that may inform the technical strategy; all the way though to full stack implementation.
+            </p>
+            <p class="popup-text popup-text-smaller">
+                We are happy to roll our sleeves up and carry out UX/UI design, back end API builds and advice on content management operating models.
+            </p>
+
+        </div>
+
+        <div class="popup-overlay popup-overlay-shadow" id="contactus-popup" onclick="hidePopup(this.id)" > 
+            <div class="popup-overlay-banner" >
+
+                <div class="popup-overlay-banner-leftside">
+                    <span class="popup-overlay-banner-leftside-text text-blue">Contact</span>
+                </div>
+        
+                <div class="popup-overlay-banner-rightside banner-blue" >
+                    <span class="popup-overlay-banner-rightside-text text-antiquewhite">Us</span>
+                </div>
+        
+            </div>        
+
+            <p class="popup-text">
+                Currently the best method of getting in touch with Midsummer IT is to drop us an <a href="mailto:midsummerit@gmail.com">email</a>
+            </p>    
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<footer></footer>
+
+<script>
+    function showPopup(buttonId) {
+        var popup = document.getElementById(buttonId.concat("-popup"));
+
+        popup.classList.add("show-popup");
+    }
+
+    function hidePopup(popupId) {
+        var popup = document.getElementById(popupId);
+
+        popup.classList.remove("show-popup");
+    }
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#efc56f",
+      "text": "#4a83b8"
+    },
+    "button": {
+      "background": "#4a83b8",
+      "text": "#faebd7"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "dismiss": "OK"
+  }
+});
+</script>
+
+</body>
+
+</html>

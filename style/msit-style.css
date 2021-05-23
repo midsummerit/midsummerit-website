@@ -1,0 +1,343 @@
+.banner-blue {
+    background-color: rgb(74, 131, 184)
+}
+
+.banner-gold {
+    background-color: rgb(239, 197, 111); 
+}
+
+.banner-yellow {
+    background-color: rgb(250, 221, 141);
+}
+
+.button-gold {  
+    background-color: rgb(239, 197, 111);     
+}
+
+.button-yellow {
+    background-color: rgb(250, 221, 141);
+}
+
+.text-blue {
+    color: rgb(75, 132, 185)
+}
+
+.text-antiquewhite {
+    color: rgb(250, 235, 215); 
+}
+
+.home-page-container {  
+    display: flex;
+    flex-flow: column; 
+    width : 100%;
+    height: 100vh;      
+    top : 0;
+    left : 0;
+    position: fixed;
+}
+
+.home-page-content-container {
+    flex-grow: 1;  
+    display: flex;
+}
+
+.home-page-top-banner {    
+    height: 150px;      
+    display: flex;
+    justify-content: flex-start;
+}
+
+.home-page-top-banner-leftside { 
+    height: 150px;     
+    width: 70%;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+
+.home-page-top-banner-rightside {   
+    height: 150px;  
+    width: 30%;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+.home-page-top-banner-leftside-text {
+    font-family: 'Bebas Neue';    
+    font-size: 5.5rem;  
+    font-weight: normal;
+    width: 100%;    
+    text-align: right;
+    display: inline-block;
+    height: 65%;
+    margin-top: auto;
+}
+
+.home-page-top-banner-rightside-text {
+    font-family: 'Bebas Neue';    
+    font-size: 5.5rem;      
+    font-weight: bolder;
+    width: 100%;    
+    text-align: left;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.main-body-hero-text {
+    font-family: 'Bebas Neue';     
+    font-size: 3.5rem; 
+    font-weight: normal;
+}
+
+
+@keyframes bannerRightSlideInSide {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;       
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+.right-top-banner-animation-sideways {
+    -webkit-animation-name: bannerRightSlideInSide;
+    animation-name: bannerRightSlideInSide;
+    animation-duration: 2s;    
+    animation-timing-function : linear;
+}
+
+
+@keyframes bannerLeftSlideInSide {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;       
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+.left-top-banner-animation-sideways {
+    -webkit-animation-name: bannerLeftSlideInSide;
+    animation-name: bannerLeftSlideInSide;
+    animation-duration: 2s;    
+    animation-timing-function : linear;
+}
+
+
+.main-body-banner {    
+  width: 100%;          
+  overflow-y: hidden; 
+  overflow-x: hidden;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-body-top-row {
+  width : 100%;
+  display : flex;
+}
+
+.main-body-middle-row {
+  width : 100%;
+  display : flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.main-body-left-column {
+  width : 50%;
+  display : flex;
+  flex-direction: column;
+}
+
+.main-body-bottom-row {
+  width : 100%;
+  display : flex;
+  justify-content: flex-end;
+}
+
+.main-body-hide-row {
+  opacity: 0.25;
+}
+
+.main-body-right-column {
+  width : 50%;
+  display : flex;
+}
+
+.main-body-left-column-text {
+  padding-left: 5%;  
+}
+
+.main-body-right-column-text {
+  padding-right: 5%;   
+}
+
+.main-body-button {
+    margin : 0% 1% 2% 1%; 
+    font-family: 'Bebas Neue';  
+    font-size: 2.0em;    
+    color: rgb(74, 131, 184);
+    text-decoration: none;
+    outline: none;
+    background-color: rgb(250, 221, 141);   
+    border  : none;  
+    padding: 0.75em 1.5em;
+}
+
+  .main-body-button:hover {
+    background-color: rgb(239, 197, 111);   
+  }
+
+  .main-body-button:active {
+    background-color: rgb(74, 131, 184);
+    color: rgb(250, 235, 215);  
+  }
+
+  .popup-overlay {
+    position:absolute;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;     
+    margin : auto;    
+    display: none;    
+    width: 90%;
+    height: 70%;    
+    background-color: rgba(239, 197, 111,0.8);
+    backdrop-filter: blur(6px);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .show-popup {
+    display: block;
+  }
+
+  .popup-overlay-banner {    
+    height: 75px;      
+    display: flex;
+    justify-content: flex-start;
+}
+
+.popup-overlay-banner-leftside { 
+    height: 75px;     
+    width: 70%;
+    opacity: 0.8;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+.popup-overlay-banner-rightside {   
+    height: 75px;  
+    width: 30%;
+    opacity: 0.8;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+.popup-overlay-banner-leftside-text {
+    font-family: 'Bebas Neue';    
+    font-size: 3.0rem;  
+    font-weight: normal;
+    width: 100%;    
+    text-align: right;
+    display: inline-block;
+    height: 65%;
+}
+
+.popup-overlay-banner-rightside-text {
+    font-family: 'Bebas Neue';    
+    font-size: 3.0rem;      
+    font-weight: bolder;
+    width: 100%;    
+    text-align: left;
+    display: inline-block;
+}
+
+.popup-overlay-shadow
+{
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.popup-overlay-shadow:before, .popup-overlay-shadow:after
+{
+  content:"";
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-border-radius:100px / 10px;
+  border-radius:100px / 10px;
+}
+
+.popup-overlay-shadow:after
+{
+  right:10px;
+  left:auto;
+  -webkit-transform:skew(8deg) rotate(3deg);
+  -moz-transform:skew(8deg) rotate(3deg);
+  -ms-transform:skew(8deg) rotate(3deg);
+  -o-transform:skew(8deg) rotate(3deg);
+  transform:skew(8deg) rotate(3deg);
+}
+
+.popup-text {
+  font-family: 'Montserrat';    
+  font-size: 1.5rem;  
+  font-weight: normal;
+  text-align: left;    
+  margin-left : 2%;
+  margin-right : 2%;
+}
+
+.popup-text-smaller {
+  font-size: 1rem;  
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 425px) {
+  .home-page-top-banner-leftside { 
+    height: 100px;
+  }
+
+  .home-page-top-banner-rightside {   
+    height: 100px;
+  }
+
+  .home-page-top-banner-leftside-text {
+    font-size: 3.5rem;      
+  }
+
+  .home-page-top-banner-rightside-text {
+    font-size: 3.5rem;      
+  }
+
+  .main-body-hero-text {    
+    font-size: 2.5rem;     
+  }
+
+  .main-body-button {
+    font-size: 1.25em;    
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .popup-overlay {
+    overflow-y: scroll;
+  }
+}
+
